@@ -1,0 +1,31 @@
+The cv2.threshold() function in OpenCV is used to perform image thresholding, which is a commonly used 
+technique in image processing to separate the regions of an image that are of interest from those that 
+are not. Thresholding is used to create binary images, where each pixel is assigned one of two values 
+(usually 0 or 255) based on whether it meets a certain condition.
+
+Here's a breakdown of the function's parameters and how it works:
+cv2.threshold(image, threshold_value, max_value, threshold_type)
+
+1. image: 
+    This is the input image you want to threshold. It should be a single-channel (grayscale) image.
+2. threshold_value: 
+    This is the value that is used as a threshold. Pixels in the input image are compared to this 
+    threshold value.
+3. max_value: 
+    This is the value to be assigned to pixels that meet the threshold condition. Typically, it's set 
+    to 0 and 255 for binary thresholding (black and white images).
+4. threshold_type: 
+    This parameter specifies type of thresholding to be applied. Some common threshold types include:
+    (A) cv2.THRESH_BINARY: 
+        If a pixel value is greater than threshold, it's set to max_value, otherwise, it's set to 0.
+    (B) cv2.THRESH_BINARY_INV: 
+        The inverse of cv2.THRESH_BINARY. 
+        If a pixel value is greater than threshold, it's set to 0, otherwise, it's set to max_value.
+    (C) cv2.THRESH_TRUNC: 
+        If a pixel value is greater than threshold, it's set to the threshold value; otherwise, it's 
+        not changed.
+    (D) cv2.THRESH_TOZERO: 
+        If a pixel value is greater than threshold, it's not changed; otherwise, it's set to 0.
+    (E) cv2.THRESH_TOZERO_INV: 
+        The inverse of cv2.THRESH_TOZERO. 
+        If a pixel value is greater than threshold, it's set to 0; otherwise, it's not changed.

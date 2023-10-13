@@ -11,7 +11,7 @@ def preprocess_image1(image_path):  # Returns a thresholded (binarized) image
     # Create an empty black image of the same size as the grayscale image
     thresholded = np.zeros_like(grayscale) * 0
     # Set pixels to white (255) if the grayscale pixel value is greater than 50
-    thresholded[grayscale >= 50] = 255
+    thresholded[grayscale >= 40] = 255
 
     return thresholded
 
@@ -22,7 +22,7 @@ def preprocess_image2(image_path):  # Returns a thresholded (binarized) image
     # Create an empty white image of the same size as the grayscale image
     thresholded = np.ones_like(grayscale) * 255
     # Set pixels to black (0) if the grayscale pixel value is greater than 50
-    thresholded[grayscale <= 50] = 0
+    thresholded[grayscale <= 40] = 0
 
     return thresholded
 
