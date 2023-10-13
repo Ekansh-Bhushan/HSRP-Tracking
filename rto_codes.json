@@ -1389,7 +1389,7 @@
     },
     "TN02": {
         "state": "Tamil Nadu",
-        "district": "Chennai (North-West)"
+        "district": "Chennai (NorthWest)"
     },
     "TN03": {
         "state": "Tamil Nadu",
@@ -1405,7 +1405,7 @@
     },
     "TN06": {
         "state": "Tamil Nadu",
-        "district": "Chennai (South-East)"
+        "district": "Chennai (SouthEast)"
     },
     "TN07": {
         "state": "Tamil Nadu",
@@ -1417,7 +1417,7 @@
     },
     "TN10": {
         "state": "Tamil Nadu",
-        "district": "Chennai (South-West)"
+        "district": "Chennai (SouthWest)"
     },
     "TN11": {
         "state": "Tamil Nadu",
@@ -1549,7 +1549,7 @@
     },
     "TN33": {
         "state": "Tamil Nadu",
-        "district": "Erode-East"
+        "district": "ErodeEast"
     },
     "TN34": {
         "state": "Tamil Nadu",
@@ -1577,7 +1577,7 @@
     },
     "TN38": {
         "state": "Tamil Nadu",
-        "district": "Coimbatore-North"
+        "district": "CoimbatoreNorth"
     },
     "TN39": {
         "state": "Tamil Nadu",
@@ -1821,7 +1821,7 @@
     },
     "TN72V": {
         "state": "Tamil Nadu",
-        "district": "Unit Office - Vallioor"
+        "district": "Unit Office  Vallioor"
     },
     "TN73": {
         "state": "Tamil Nadu",
@@ -1947,147 +1947,147 @@
         "state": "Tamil Nadu",
         "district": "Mettur"
     },
-    "TS-01": {
+    "TS01": {
         "state": "Telangana",
         "district": "Adilabad"
     },
-    "TS-02": {
+    "TS02": {
         "state": "Telangana",
         "district": "Karimnagar"
     },
-    "TS-03": {
+    "TS03": {
         "state": "Telangana",
         "district": "Warangal Urban"
     },
-    "TS-04": {
+    "TS04": {
         "state": "Telangana",
         "district": "Khammam"
     },
-    "TS-05": {
+    "TS05": {
         "state": "Telangana",
         "district": "Nalgonda"
     },
-    "TS-06": {
+    "TS06": {
         "state": "Telangana",
         "district": "Mahbubnagar"
     },
-    "TS-07": {
+    "TS07": {
         "state": "Telangana",
         "district": "Ranga Reddy"
     },
-    "TS-08": {
+    "TS08": {
         "state": "Telangana",
-        "district": "Medchal-Malkajgiri District"
+        "district": "MedchalMalkajgiri District"
     },
-    "TS-09": {
+    "TS09": {
         "state": "Telangana",
         "district": "Hyderabad Central"
     },
-    "TS-10": {
+    "TS10": {
         "state": "Telangana",
         "district": "Hyderabad North"
     },
-    "TS-11": {
+    "TS11": {
         "state": "Telangana",
         "district": "Hyderabad East"
     },
-    "TS-12": {
+    "TS12": {
         "state": "Telangana",
         "district": "Hyderabad South"
     },
-    "TS-13": {
+    "TS13": {
         "state": "Telangana",
         "district": "Hyderabad West"
     },
-    "TS-14": {
+    "TS14": {
         "state": "Telangana",
         "district": "Reserved for Hyderabad"
     },
-    "TS-15": {
+    "TS15": {
         "state": "Telangana",
         "district": "Sangareddy district"
     },
-    "TS-16": {
+    "TS16": {
         "state": "Telangana",
         "district": "Nizamabad district"
     },
-    "TS-17": {
+    "TS17": {
         "state": "Telangana",
         "district": "Kamareddy district"
     },
-    "TS-18": {
+    "TS18": {
         "state": "Telangana",
         "district": "Nirmal district"
     },
-    "TS-19": {
+    "TS19": {
         "state": "Telangana",
         "district": "Mancherial district"
     },
-    "TS-20": {
+    "TS20": {
         "state": "Telangana",
         "district": "Kumaram Bheem Asifabad district"
     },
-    "TS-21": {
+    "TS21": {
         "state": "Telangana",
         "district": "Jagtial district"
     },
-    "TS-22": {
+    "TS22": {
         "state": "Telangana",
         "district": "Peddapalli district"
     },
-    "TS-23": {
+    "TS23": {
         "state": "Telangana",
         "district": "Sircilla district"
     },
-    "TS-24": {
+    "TS24": {
         "state": "Telangana",
         "district": "Warangal (rural) district"
     },
-    "TS-25": {
+    "TS25": {
         "state": "Telangana",
         "district": "Jayashankar Bhupalpally district"
     },
-    "TS-26": {
+    "TS26": {
         "state": "Telangana",
         "district": "Mahabubabad district"
     },
-    "TS-27": {
+    "TS27": {
         "state": "Telangana",
         "district": "Jangaon district"
     },
-    "TS-28": {
+    "TS28": {
         "state": "Telangana",
         "district": "Bhadradri Kothagudem district"
     },
-    "TS-29": {
+    "TS29": {
         "state": "Telangana",
         "district": "Suryapet district"
     },
-    "TS-30": {
+    "TS30": {
         "state": "Telangana",
         "district": "Yadadri Bhuvanagiri district"
     },
-    "TS-31": {
+    "TS31": {
         "state": "Telangana",
         "district": "Nagarkurnool district"
     },
-    "TS-32": {
+    "TS32": {
         "state": "Telangana",
         "district": "Wanaparthy district"
     },
-    "TS-33": {
+    "TS33": {
         "state": "Telangana",
         "district": "Jogulamba Gadwal district"
     },
-    "TS-34": {
+    "TS34": {
         "state": "Telangana",
         "district": "Vikarabad district"
     },
-    "TS-35": {
+    "TS35": {
         "state": "Telangana",
         "district": "Medak district"
     },
-    "TS-36": {
+    "TS36": {
         "state": "Telangana",
         "district": "Siddipet district"
     },
@@ -2247,307 +2247,307 @@
         "state": "Bihar",
         "district": "Rohtas"
     },
-    "PB-01": {
+    "PB01": {
         "state": "Punjab",
         "district": "Taxis"
     },
-    "PB-02": {
+    "PB02": {
         "state": "Punjab",
         "district": "Amritsar"
     },
-    "PB-03": {
+    "PB03": {
         "state": "Punjab",
         "district": "Bathinda"
     },
-    "PB-04": {
+    "PB04": {
         "state": "Punjab",
         "district": "Faridkot"
     },
-    "PB-05": {
+    "PB05": {
         "state": "Punjab",
         "district": "Faridkot"
     },
-    "PB-06": {
+    "PB06": {
         "state": "Punjab",
         "district": "Gurdaspur"
     },
-    "PB-07": {
+    "PB07": {
         "state": "Punjab",
         "district": "Hoshiarpur"
     },
-    "PB-08": {
+    "PB08": {
         "state": "Punjab",
         "district": "Jalandhar"
     },
-    "PB-09": {
+    "PB09": {
         "state": "Punjab",
         "district": "Kapurthala"
     },
-    "PB-10": {
+    "PB10": {
         "state": "Punjab",
         "district": "Ludhiana"
     },
-    "PB-11": {
+    "PB11": {
         "state": "Punjab",
         "district": "Patiala"
     },
-    "PB-12": {
+    "PB12": {
         "state": "Punjab",
         "district": "Ropar"
     },
-    "PB-13": {
+    "PB13": {
         "state": "Punjab",
         "district": "Sangrur"
     },
-    "PB-14": {
+    "PB14": {
         "state": "Punjab",
         "district": "Ajnala"
     },
-    "PB-15": {
+    "PB15": {
         "state": "Punjab",
         "district": "Abohar"
     },
-    "PB-16": {
+    "PB16": {
         "state": "Punjab",
         "district": "Anandpur Sahib"
     },
-    "PB-17": {
+    "PB17": {
         "state": "Punjab",
         "district": "Baba Bakala"
     },
-    "PB-18": {
+    "PB18": {
         "state": "Punjab",
         "district": "Batala"
     },
-    "PB-19": {
+    "PB19": {
         "state": "Punjab",
         "district": "Barnala"
     },
-    "PB-20": {
+    "PB20": {
         "state": "Punjab",
         "district": "Balachaur"
     },
-    "PB-21": {
+    "PB21": {
         "state": "Punjab",
         "district": "Dasuya"
     },
-    "PB-22": {
+    "PB22": {
         "state": "Punjab",
         "district": "Fazilka"
     },
-    "PB-23": {
+    "PB23": {
         "state": "Punjab",
         "district": "Fatehgarh Sahib"
     },
-    "PB-24": {
+    "PB24": {
         "state": "Punjab",
         "district": "Garhshankar"
     },
-    "PB-25": {
+    "PB25": {
         "state": "Punjab",
         "district": "Jagraon"
     },
-    "PB-26": {
+    "PB26": {
         "state": "Punjab",
         "district": "Khanna"
     },
-    "PB-27": {
+    "PB27": {
         "state": "Punjab",
         "district": "Kharar"
     },
-    "PB-28": {
+    "PB28": {
         "state": "Punjab",
         "district": "Malerkotla"
     },
-    "PB-29": {
+    "PB29": {
         "state": "Punjab",
         "district": "Moga"
     },
-    "PB-30": {
+    "PB30": {
         "state": "Punjab",
         "district": "Muktsar"
     },
-    "PB-31": {
+    "PB31": {
         "state": "Punjab",
         "district": "Mansa"
     },
-    "PB-32": {
+    "PB32": {
         "state": "Punjab",
         "district": "Nawanshahr"
     },
-    "PB-33": {
+    "PB33": {
         "state": "Punjab",
         "district": "Nakodar"
     },
-    "PB-34": {
+    "PB34": {
         "state": "Punjab",
         "district": "Nabha"
     },
-    "PB-35": {
+    "PB35": {
         "state": "Punjab",
         "district": "Pathankot"
     },
-    "PB-36": {
+    "PB36": {
         "state": "Punjab",
         "district": "Phagwara"
     },
-    "PB-37": {
+    "PB37": {
         "state": "Punjab",
         "district": "Phillaur"
     },
-    "PB-38": {
+    "PB38": {
         "state": "Punjab",
         "district": "Patti"
     },
-    "PB-39": {
+    "PB39": {
         "state": "Punjab",
         "district": "Rajpura"
     },
-    "PB-40": {
+    "PB40": {
         "state": "Punjab",
         "district": "Rampura Phul"
     },
-    "PB-41": {
+    "PB41": {
         "state": "Punjab",
         "district": "Sultanpur Lodhi"
     },
-    "PB-42": {
+    "PB42": {
         "state": "Punjab",
         "district": "Samana"
     },
-    "PB-43": {
+    "PB43": {
         "state": "Punjab",
         "district": "Samrala"
     },
-    "PB-44": {
+    "PB44": {
         "state": "Punjab",
         "district": "Sunam"
     },
-    "PB-45": {
+    "PB45": {
         "state": "Punjab",
         "district": "Talwandi Sabo"
     },
-    "PB-46": {
+    "PB46": {
         "state": "Punjab",
         "district": "Tarn Taran"
     },
-    "PB-47": {
+    "PB47": {
         "state": "Punjab",
         "district": "Zira"
     },
-    "PB-48": {
+    "PB48": {
         "state": "Punjab",
         "district": "Amloh"
     },
-    "PB-49": {
+    "PB49": {
         "state": "Punjab",
         "district": "Khamano"
     },
-    "PB-50": {
+    "PB50": {
         "state": "Punjab",
         "district": "Budhlada"
     },
-    "PB-51": {
+    "PB51": {
         "state": "Punjab",
         "district": "Jhunir / Sardulgarh"
     },
-    "PB-52": {
+    "PB52": {
         "state": "Punjab",
         "district": "Bassi Pathana"
     },
-    "PB-53": {
+    "PB53": {
         "state": "Punjab",
         "district": "Malout"
     },
-    "PB-54": {
+    "PB54": {
         "state": "Punjab",
         "district": "Mukerian"
     },
-    "PB-55": {
+    "PB55": {
         "state": "Punjab",
         "district": "Payal"
     },
-    "PB-56": {
+    "PB56": {
         "state": "Punjab",
         "district": "Raikot"
     },
-    "PB-57": {
+    "PB57": {
         "state": "Punjab",
         "district": "Bhulath"
     },
-    "PB-58": {
+    "PB58": {
         "state": "Punjab",
         "district": "Dera Baba Nanak"
     },
-    "PB-59": {
+    "PB59": {
         "state": "Punjab",
         "district": "Dhuri"
     },
-    "PB-60": {
+    "PB60": {
         "state": "Punjab",
         "district": "Gidderbaha"
     },
-    "PB-61": {
+    "PB61": {
         "state": "Punjab",
         "district": "Jalalabad"
     },
-    "PB-62": {
+    "PB62": {
         "state": "Punjab",
         "district": "Jaitu"
     },
-    "PB-63": {
+    "PB63": {
         "state": "Punjab",
         "district": "Khadoor Sahib"
     },
-    "PB-64": {
+    "PB64": {
         "state": "Punjab",
         "district": "Moonak"
     },
-    "PB-65": {
+    "PB65": {
         "state": "Punjab",
         "district": "Mohali"
     },
-    "PB-66": {
+    "PB66": {
         "state": "Punjab",
         "district": "Nihal Singh Wala"
     },
-    "PB-67": {
+    "PB67": {
         "state": "Punjab",
         "district": "Shahkot"
     },
-    "PB-68": {
+    "PB68": {
         "state": "Punjab",
         "district": "Dhar Kalan"
     },
-    "PB-69": {
+    "PB69": {
         "state": "Punjab",
         "district": "Bagha Purana"
     },
-    "PB-70": {
+    "PB70": {
         "state": "Punjab",
         "district": "Dera Bassi"
     },
-    "PB-71": {
+    "PB71": {
         "state": "Punjab",
         "district": "Chamkaur Sahib"
     },
-    "PB-72": {
+    "PB72": {
         "state": "Punjab",
         "district": "Patran"
     },
-    "PB-73": {
+    "PB73": {
         "state": "Punjab",
         "district": "Tappa Mandi"
     },
-    "PB-74": {
+    "PB74": {
         "state": "Punjab",
         "district": "Nangal"
     },
-    "PB-75": {
+    "PB75": {
         "state": "Punjab",
         "district": "Lehra"
     },
-    "PB-76": {
+    "PB76": {
         "state": "Punjab",
         "district": "Ahmedgarh"
     },
@@ -2737,7 +2737,7 @@
     },
     "MH48": {
         "state": "Maharashtra",
-        "district": "Vasai-Virar"
+        "district": "VasaiVirar"
     },
     "MH49": {
         "state": "Maharashtra",
@@ -2751,271 +2751,271 @@
         "state": "Maharashtra",
         "district": "Ratnagiri district"
     },
-    "GJ-1": {
+    "GJ1": {
         "state": "Gujarat",
         "district": "Ahmedabad"
     },
-    "GJ-1-W": {
+    "GJ1W": {
         "state": "Gujarat",
         "district": "WIAA, Bodakdev, Ahmedabad"
     },
-    "GJ-2": {
+    "GJ2": {
         "state": "Gujarat",
         "district": "Mehsana"
     },
-    "GJ-3": {
+    "GJ3": {
         "state": "Gujarat",
         "district": "Rajkot"
     },
-    "GJ-4": {
+    "GJ4": {
         "state": "Gujarat",
         "district": "Bhavnagar"
     },
-    "GJ-5": {
+    "GJ5": {
         "state": "Gujarat",
         "district": "Surat"
     },
-    "GJ-6": {
+    "GJ6": {
         "state": "Gujarat",
         "district": "Surat"
     },
-    "GJ-7": {
+    "GJ7": {
         "state": "Gujarat",
         "district": "Kheda"
     },
-    "GJ-8": {
+    "GJ8": {
         "state": "Gujarat",
         "district": "BanasKantha"
     },
-    "GJ-9": {
+    "GJ9": {
         "state": "Gujarat",
         "district": "SabarKantha"
     },
-    "GJ-10": {
+    "GJ10": {
         "state": "Gujarat",
         "district": "Jamnagar"
     },
-    "GJ-11": {
+    "GJ11": {
         "state": "Gujarat",
         "district": "Junagadh"
     },
-    "GJ-12": {
+    "GJ12": {
         "state": "Gujarat",
         "district": "Kutch / Kachchh"
     },
-    "GJ-13": {
+    "GJ13": {
         "state": "Gujarat",
         "district": "Surendranagar"
     },
-    "GJ-14": {
+    "GJ14": {
         "state": "Gujarat",
         "district": "Amreli"
     },
-    "GJ-15": {
+    "GJ15": {
         "state": "Gujarat",
         "district": "Valsad"
     },
-    "GJ-16": {
+    "GJ16": {
         "state": "Gujarat",
         "district": "Bharuch"
     },
-    "GJ-17": {
+    "GJ17": {
         "state": "Gujarat",
         "district": "Panchmahal"
     },
-    "GJ-18": {
+    "GJ18": {
         "state": "Gujarat",
         "district": "Gandhinagar"
     },
-    "GJ-19": {
+    "GJ19": {
         "state": "Gujarat",
         "district": "Bardoli"
     },
-    "GJ-20": {
+    "GJ20": {
         "state": "Gujarat",
         "district": "Dahod"
     },
-    "GJ-21": {
+    "GJ21": {
         "state": "Gujarat",
         "district": "Navsari"
     },
-    "GJ-22": {
+    "GJ22": {
         "state": "Gujarat",
         "district": "Navsari"
     },
-    "GJ-23": {
+    "GJ23": {
         "state": "Gujarat",
         "district": "Anand"
     },
-    "GJ-24": {
+    "GJ24": {
         "state": "Gujarat",
         "district": "Patan"
     },
-    "GJ-25": {
+    "GJ25": {
         "state": "Gujarat",
         "district": "Porbandar"
     },
-    "GJ-26": {
+    "GJ26": {
         "state": "Gujarat",
         "district": "Tapi (Vyara)"
     },
-    "GJ-27": {
+    "GJ27": {
         "state": "Gujarat",
         "district": "Ahmedabad East"
     },
-    "GJ-28": {
+    "GJ28": {
         "state": "Gujarat",
         "district": "Surat West (Pal)"
     },
-    "GJ-29": {
+    "GJ29": {
         "state": "Gujarat",
         "district": "Vadodara Rural"
     },
-    "GJ-30": {
+    "GJ30": {
         "state": "Gujarat",
         "district": "Dang (Ahwa)"
     },
-    "GJ-31": {
+    "GJ31": {
         "state": "Gujarat",
-        "district": "Gandhidham - Tehsil (Taluko) of Kutch District"
+        "district": "Gandhidham  Tehsil (Taluko) of Kutch District"
     },
-    "GJ-32": {
+    "GJ32": {
         "state": "Gujarat",
         "district": "Botad"
     },
-    "GJ-33": {
+    "GJ33": {
         "state": "Gujarat",
         "district": "Arvalli (Modasa)"
     },
-    "GJ-34": {
+    "GJ34": {
         "state": "Gujarat",
         "district": "Devbhumi Dwarka"
     },
-    "GJ-35": {
+    "GJ35": {
         "state": "Gujarat",
         "district": "Mahisagar (Lunawada)"
     },
-    "GJ-36": {
+    "GJ36": {
         "state": "Gujarat",
         "district": "Morbi (Morvi) District"
     },
-    "GJ-37": {
+    "GJ37": {
         "state": "Gujarat",
         "district": "Chhota Udaipur"
     },
-    "GJ-38": {
+    "GJ38": {
         "state": "Gujarat",
         "district": "Gir Somnath"
     },
-    "AP-01": {
+    "AP01": {
         "state": "Andhra Pradesh",
-        "district": "Adilabad - Mancherial / Nirmal"
+        "district": "Adilabad  Mancherial / Nirmal"
     },
-    "AP-02": {
+    "AP02": {
         "state": "Andhra Pradesh",
-        "district": "Anantapur - Hindupur"
+        "district": "Anantapur  Hindupur"
     },
-    "AP-03": {
+    "AP03": {
         "state": "Andhra Pradesh",
-        "district": "Chittoor - Tirupati / Madanapalle"
+        "district": "Chittoor  Tirupati / Madanapalle"
     },
-    "AP-04": {
+    "AP04": {
         "state": "Andhra Pradesh",
-        "district": "Kadapa - Proddatur"
+        "district": "Kadapa  Proddatur"
     },
-    "AP-05": {
+    "AP05": {
         "state": "Andhra Pradesh",
         "district": "Kakinada / Amalapuram / Rajahmundry"
     },
-    "AP-07": {
+    "AP07": {
         "state": "Andhra Pradesh",
-        "district": "Guntur - Piduguralla / Narasaraopet / Repalle"
+        "district": "Guntur  Piduguralla / Narasaraopet / Repalle"
     },
-    "AP-09": {
+    "AP09": {
         "state": "Andhra Pradesh",
         "district": "Hyderabad Central (Khairtabad)"
     },
-    "AP-10": {
+    "AP10": {
         "state": "Andhra Pradesh",
         "district": "Hyderabad North (Secunderabad)"
     },
-    "AP-11": {
+    "AP11": {
         "state": "Andhra Pradesh",
         "district": "Hyderabad East (Malakpet)"
     },
-    "AP-12": {
+    "AP12": {
         "state": "Andhra Pradesh",
         "district": "Hyderabad South (Kisanbagh)"
     },
-    "AP-13": {
+    "AP13": {
         "state": "Andhra Pradesh",
         "district": "Hyderabad West (Mehdipatnam)"
     },
-    "AP-15": {
+    "AP15": {
         "state": "Andhra Pradesh",
-        "district": "Karimnagar - Jagtial / Peddapalli"
+        "district": "Karimnagar  Jagtial / Peddapalli"
     },
-    "AP-16": {
+    "AP16": {
         "state": "Andhra Pradesh",
         "district": "Vijayawada RTO / Gudivada / Machilipatnam / Nandigama / Nuzvid"
     },
-    "AP-20": {
+    "AP20": {
         "state": "Andhra Pradesh",
-        "district": "Khammam - Kothagudem / Sathupally / Yellandu"
+        "district": "Khammam  Kothagudem / Sathupally / Yellandu"
     },
-    "AP-21": {
+    "AP21": {
         "state": "Andhra Pradesh",
-        "district": "Kurnool - Adoni / Nandyal"
+        "district": "Kurnool  Adoni / Nandyal"
     },
-    "AP-22": {
+    "AP22": {
         "state": "Andhra Pradesh",
-        "district": "Mahbubnagar - Pebbair / Gadwal"
+        "district": "Mahbubnagar  Pebbair / Gadwal"
     },
-    "AP-23": {
+    "AP23": {
         "state": "Andhra Pradesh",
-        "district": "Medak - Sangareddy / Siddipet / Patancheru"
+        "district": "Medak  Sangareddy / Siddipet / Patancheru"
     },
-    "AP-24": {
+    "AP24": {
         "state": "Andhra Pradesh",
-        "district": "Nalgonda - Suryapet / Miryalaguda / Bhongir / Bibinagar"
+        "district": "Nalgonda  Suryapet / Miryalaguda / Bhongir / Bibinagar"
     },
-    "AP-25": {
+    "AP25": {
         "state": "Andhra Pradesh",
-        "district": "Nizamabad - Kamareddy"
+        "district": "Nizamabad  Kamareddy"
     },
-    "AP-26": {
+    "AP26": {
         "state": "Andhra Pradesh",
-        "district": "Nellore - Kavali / Gudur / Sullurpeta / Naidupet"
+        "district": "Nellore  Kavali / Gudur / Sullurpeta / Naidupet"
     },
-    "AP-27": {
+    "AP27": {
         "state": "Andhra Pradesh",
-        "district": "Ongole - Chirala / Markapur"
+        "district": "Ongole  Chirala / Markapur"
     },
-    "AP-28": {
+    "AP28": {
         "state": "Andhra Pradesh",
         "district": "Attapur / Kukatpally / Medchal"
     },
-    "AP-29": {
+    "AP29": {
         "state": "Andhra Pradesh",
         "district": "Uppal Kalan / Ibrahimpatnam"
     },
-    "AP-30": {
+    "AP30": {
         "state": "Andhra Pradesh",
-        "district": "Srikakulam - Tekkali / Palasa / Sompeta / Ichchapuram / Kaviti"
+        "district": "Srikakulam  Tekkali / Palasa / Sompeta / Ichchapuram / Kaviti"
     },
-    "AP-31": {
+    "AP31": {
         "state": "Andhra Pradesh",
-        "district": "Visakhapatnam - Gajuwaka / Anakapalli"
+        "district": "Visakhapatnam  Gajuwaka / Anakapalli"
     },
-    "AP-35": {
+    "AP35": {
         "state": "Andhra Pradesh",
         "district": "Vizianagaram"
     },
-    "AP-36": {
+    "AP36": {
         "state": "Andhra Pradesh",
-        "district": "Warangal - Jangaon / Mahabubabad"
+        "district": "Warangal  Jangaon / Mahabubabad"
     },
-    "AP-37": {
+    "AP37": {
         "state": "Andhra Pradesh",
         "district": "Eluru / Jangareddygudem / Kovvur / Tadepalligudem / Tanuku / Bhimavaram / Palakollu / Chintalapudi"
     },
@@ -3249,7 +3249,7 @@
     },
     "CG011": {
         "state": "Chhattisgarh",
-        "district": "Janjgir-Champa"
+        "district": "JanjgirChampa"
     },
     "CG012": {
         "state": "Chhattisgarh",
@@ -3327,147 +3327,147 @@
         "state": "Chhattisgarh",
         "district": "Balrampur"
     },
-    "GA-01": {
+    "GA01": {
         "state": "Goa",
         "district": "North Goa district"
     },
-    "GA-02": {
+    "GA02": {
         "state": "Goa",
         "district": "South Goa district"
     },
-    "GA-03": {
+    "GA03": {
         "state": "Goa",
         "district": "Mapusa"
     },
-    "GA-04": {
+    "GA04": {
         "state": "Goa",
         "district": "Bicholim"
     },
-    "GA-05": {
+    "GA05": {
         "state": "Goa",
         "district": "Ponda"
     },
-    "GA-06": {
+    "GA06": {
         "state": "Goa",
         "district": "Vasco"
     },
-    "GA-07": {
+    "GA07": {
         "state": "Goa",
         "district": "Panaji"
     },
-    "GA-08": {
+    "GA08": {
         "state": "Goa",
         "district": "Margao"
     },
-    "GA-09": {
+    "GA09": {
         "state": "Goa",
         "district": "Quepem"
     },
-    "GA-10": {
+    "GA10": {
         "state": "Goa",
         "district": "Canacona"
     },
-    "GA-11": {
+    "GA11": {
         "state": "Goa",
         "district": "Pernem"
     },
-    "GA-12": {
+    "GA12": {
         "state": "Goa",
         "district": "Pernem"
     },
-    "JH-01": {
+    "JH01": {
         "state": "Jharkhand",
         "district": "Ranchi"
     },
-    "JH-02": {
+    "JH02": {
         "state": "Jharkhand",
         "district": "Hazaribagh"
     },
-    "JH-03": {
+    "JH03": {
         "state": "Jharkhand",
         "district": "Daltonganj"
     },
-    "JH-04": {
+    "JH04": {
         "state": "Jharkhand",
         "district": "Dumka"
     },
-    "JH-05": {
+    "JH05": {
         "state": "Jharkhand",
         "district": "Jamshedpur"
     },
-    "JH-06": {
+    "JH06": {
         "state": "Jharkhand",
         "district": "Chaibasa"
     },
-    "JH-07": {
+    "JH07": {
         "state": "Jharkhand",
         "district": "Gumla"
     },
-    "JH-08": {
+    "JH08": {
         "state": "Jharkhand",
         "district": "Lohardaga"
     },
-    "JH-09": {
+    "JH09": {
         "state": "Jharkhand",
         "district": "Bokaro Steel City"
     },
-    "JH-10": {
+    "JH10": {
         "state": "Jharkhand",
         "district": "Dhanbad"
     },
-    "JH-11": {
+    "JH11": {
         "state": "Jharkhand",
         "district": "Giridih"
     },
-    "JH-12": {
+    "JH12": {
         "state": "Jharkhand",
         "district": "Koderma"
     },
-    "JH-13": {
+    "JH13": {
         "state": "Jharkhand",
         "district": "Chatra"
     },
-    "JH-14": {
+    "JH14": {
         "state": "Jharkhand",
         "district": "Garhwa"
     },
-    "JH-15": {
+    "JH15": {
         "state": "Jharkhand",
         "district": "Deoghar"
     },
-    "JH-16": {
+    "JH16": {
         "state": "Jharkhand",
         "district": "Pakur"
     },
-    "JH-17": {
+    "JH17": {
         "state": "Jharkhand",
         "district": "Godda"
     },
-    "JH-18": {
+    "JH18": {
         "state": "Jharkhand",
         "district": "Sahibganj"
     },
-    "JH-19": {
+    "JH19": {
         "state": "Jharkhand",
         "district": "Latehar"
     },
-    "JH-20": {
+    "JH20": {
         "state": "Jharkhand",
         "district": "Simdega"
     },
-    "JH-21": {
+    "JH21": {
         "state": "Jharkhand",
         "district": "Jamtara"
     },
-    "JH-22": {
+    "JH22": {
         "state": "Jharkhand",
-        "district": "Saraikela-Kharsawan"
+        "district": "SaraikelaKharsawan"
     },
-    "JH-23": {
+    "JH23": {
         "state": "Jharkhand",
         "district": "Khunti"
     },
-    "JH-24": {
+    "JH24": {
         "state": "Jharkhand",
         "district": "Ramgarh"
     },
@@ -3705,7 +3705,7 @@
     },
     "KA59": {
         "state": "Karnataka",
-        "district": "Chamrajpet, Bengaluru Dist - 560019"
+        "district": "Chamrajpet, Bengaluru Dist  560019"
     },
     "KA60": {
         "state": "Karnataka",
@@ -3721,15 +3721,15 @@
     },
     "KA63": {
         "state": "Karnataka",
-        "district": "Hubballi - 580026"
+        "district": "Hubballi  580026"
     },
     "KA64": {
         "state": "Karnataka",
-        "district": "Madhugiri, Tumakuru District - 572132"
+        "district": "Madhugiri, Tumakuru District  572132"
     },
     "KA65": {
         "state": "Karnataka",
-        "district": "Dandeli - 581325"
+        "district": "Dandeli  581325"
     },
     "KA66": {
         "state": "Karnataka",
@@ -4077,45 +4077,45 @@
     },
     "ML10": {
         "state": "Meghalaya",
-        "district": "Ri-Bhoi"
+        "district": "RiBhoi"
     },
-    "NL-01": {
+    "NL01": {
         "state": "Nagaland",
         "district": "Kohima"
     },
-    "NL-02": {
+    "NL02": {
         "state": "Nagaland",
         "district": "Mokokchung"
     },
-    "NL-03": {
+    "NL03": {
         "state": "Nagaland",
         "district": "D.T.O. Tuensang"
     },
-    "NL-04": {
+    "NL04": {
         "state": "Nagaland",
         "district": "D.T.O. Mon"
     },
-    "NL-05": {
+    "NL05": {
         "state": "Nagaland",
         "district": "D.T.O. Wokha"
     },
-    "NL-06": {
+    "NL06": {
         "state": "Nagaland",
         "district": "D.T.O. Zunheboto"
     },
-    "NL-07": {
+    "NL07": {
         "state": "Nagaland",
         "district": "D.T.O. Dimapur"
     },
-    "NL-08": {
+    "NL08": {
         "state": "Nagaland",
         "district": "D.T.O. Phek"
     },
-    "NL-10": {
+    "NL10": {
         "state": "Nagaland",
-        "district": "RTO Kohima for Govt. non-transport vehicle"
+        "district": "RTO Kohima for Govt. nontransport vehicle"
     },
-    "NL-11": {
+    "NL11": {
         "state": "Nagaland",
         "district": "RTO Kohima for Govt. Transport vehicle"
     },
@@ -4249,7 +4249,7 @@
     },
     "OD 33": {
         "state": "Odisha",
-        "district": "Bhubaneswar-II"
+        "district": "BhubaneswarII"
     },
     "OD 34": {
         "state": "Odisha",
@@ -4271,83 +4271,83 @@
         "state": "Sikkim",
         "district": "Jorethang"
     },
-    "UK-01": {
+    "UK01": {
         "state": "Uttarakhand",
         "district": "Almora"
     },
-    "UK-02": {
+    "UK02": {
         "state": "Uttarakhand",
         "district": "Bageshwar"
     },
-    "UK-03": {
+    "UK03": {
         "state": "Uttarakhand",
         "district": "Champawat"
     },
-    "UK-04": {
+    "UK04": {
         "state": "Uttarakhand",
         "district": "Nainital"
     },
-    "UK-05": {
+    "UK05": {
         "state": "Uttarakhand",
         "district": "Pithoragarh"
     },
-    "UK-06": {
+    "UK06": {
         "state": "Uttarakhand",
         "district": "Udham Singh Nagar"
     },
-    "UK-07": {
+    "UK07": {
         "state": "Uttarakhand",
         "district": "Dehradun"
     },
-    "UK-08": {
+    "UK08": {
         "state": "Uttarakhand",
         "district": "Haridwar"
     },
-    "UK-09": {
+    "UK09": {
         "state": "Uttarakhand",
         "district": "Tehri"
     },
-    "UK-10": {
+    "UK10": {
         "state": "Uttarakhand",
         "district": "Uttarkashi"
     },
-    "UK-11": {
+    "UK11": {
         "state": "Uttarakhand",
         "district": "Chamoli"
     },
-    "UK-12": {
+    "UK12": {
         "state": "Uttarakhand",
         "district": "Pauri"
     },
-    "UK-13": {
+    "UK13": {
         "state": "Uttarakhand",
         "district": "Rudraprayag"
     },
-    "UK-14": {
+    "UK14": {
         "state": "Uttarakhand",
         "district": "Rishikesh"
     },
-    "UK-15": {
+    "UK15": {
         "state": "Uttarakhand",
         "district": "Kotdwar"
     },
-    "UK-16": {
+    "UK16": {
         "state": "Uttarakhand",
         "district": "Vikasnagar"
     },
-    "UK-17": {
+    "UK17": {
         "state": "Uttarakhand",
         "district": "Roorkee"
     },
-    "UK-18": {
+    "UK18": {
         "state": "Uttarakhand",
         "district": "Kashipur"
     },
-    "UK-19": {
+    "UK19": {
         "state": "Uttarakhand",
         "district": "Ramnagar"
     },
-    "UK-20": {
+    "UK20": {
         "state": "Uttarakhand",
         "district": "Ranikhet"
     },
