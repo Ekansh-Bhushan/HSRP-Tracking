@@ -2,6 +2,7 @@ import cv2
 import numpy as np
 import json
 import pytesseract
+import re 
 
 # WITH BASE AS BLACK
 def preprocess_image1(image_path):  # Returns a thresholded (binarized) image
@@ -47,11 +48,38 @@ plate_text = ""
 plate_coordinates = []
 
 # Define a function to filter and validate license plate candidates
-
-
 def is_valid_plate(candidate):
-    # Implement your criteria for license plate validation here
-    # For example, check for minimum and maximum dimensions, aspect ratio, etc.
+    # Remove any leading/trailing whitespace and convert to uppercase
+    candidate = candidate.strip().upper()
+
+    # Check the length of the candidate
+    if len(candidate) != 10:
+        return False  # License plates in India typically have 10 characters
+
+    # Check if the first 2 characters are alphabets (state code)
+    state_code = candidate[:2]
+    if not re.match(r'^[A-Z]{2}$', state_code):
+        return False
+
+    # Check if the next 2 (3rd & 4th) characters are digits
+    # district_code = candidate[2:4]
+    # if not re.match(r'^\d{2}$', district_code):
+    #     return False
+
+    # Check if the next 2 (5th & 6th) characters are alphabets
+    alphabets = candidate[4:6]
+    if not re.match(r'^[A-Z]{2}$', alphabets):
+        return False
+
+    # Check if the last 4 characters are digits
+    numbers = candidate[6:]
+    if not re.match(r'^\d{4}$', numbers):
+        return False
+
+    # Check the color scheme (black on white for private vehicles, black on yellow for commercial vehicles)
+    # if state_code != 'DL' and candidate[6] != 'W':
+    #     return False
+
     return True
 
 
@@ -70,7 +98,7 @@ for contour in contours:
         break  # Break the loop after the first valid plate is found
 
 # Check if a license plate was detected and extracted
-if plate_text:
+if is_valid_plate(plate_text):
     # Remove all spaces from plate_text
     plate_text = plate_text.strip().replace(" ", "")
     print(f"License Plate: {plate_text}")
