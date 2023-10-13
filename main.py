@@ -4,8 +4,6 @@ import json
 import pytesseract
 
 # WITH BASE AS BLACK
-
-
 def preprocess_image1(image_path):  # Returns a thresholded (binarized) image
     original = cv2.imread(image_path)
     grayscale = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
@@ -17,8 +15,6 @@ def preprocess_image1(image_path):  # Returns a thresholded (binarized) image
     return thresholded
 
 # WITH BASE AS WHITE
-
-
 def preprocess_image2(image_path):  # Returns a thresholded (binarized) image
     original = cv2.imread(image_path)
     grayscale = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
