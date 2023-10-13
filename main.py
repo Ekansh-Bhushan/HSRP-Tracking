@@ -49,11 +49,10 @@ plate_coordinates = []
 
 # Define a function to filter and validate license plate candidates
 def is_valid_plate(candidate):
-    # Remove any leading/trailing whitespace and convert to uppercase
-    candidate = candidate.strip().upper()
-
     # Check the length of the candidate
-    if len(candidate) != 10:  # License plates in India typically have 10 characters
+    # License plates in India typically have 10 or 9 characters
+    print(len(candidate))
+    if (len(candidate) != 10 and len(candidate)!=9):  
         return False 
 
     # Check if the first 2 characters are alphabets (state code)
@@ -61,24 +60,13 @@ def is_valid_plate(candidate):
     if not re.match(r'^[A-Z]{2}$', state_code):
         return False
 
-    # Check if the next 2 (3rd & 4th) characters are digits
-    # district_code = candidate[2:4]
-    # if not re.match(r'^\d{2}$', district_code):
-    #     return False
-
-    # Check if the next 2 (5th & 6th) characters are alphabets
-    alphabets = candidate[4:6]
-    if not re.match(r'^[A-Z]{2}$', alphabets):
-        return False
 
     # Check if the last 4 characters are digits
-    numbers = candidate[6:]
+    numbers = candidate[-4:]
     if not re.match(r'^\d{4}$', numbers):
         return False
 
     # Check the color scheme (black on white for private vehicles, black on yellow for commercial vehicles)
-    # if state_code != 'DL' and candidate[6] != 'W':
-    #     return False
 
     return True
 
@@ -86,43 +74,49 @@ def is_valid_plate(candidate):
 # Iterate through the contours and process each potential license plate
 for contour in contours:
     x, y, w, h = cv2.boundingRect(contour)
-    if is_valid_plate(contour):
-        # Extract the region of interest (ROI) containing the potential license plate
-        plate_roi = preprocessed[y:y + h, x:x + w]
+    # if is_valid_plate(contour):
+    # Extract the region of interest (ROI) containing the potential license plate
+    plate_roi = preprocessed[y:y + h, x:x + w]
 
-        # Perform OCR on the license plate region
-        plate_text = pytesseract.image_to_string(plate_roi, config='--psm 6')
+    # Perform OCR on the license plate region
+    plate_text = pytesseract.image_to_string(plate_roi, config='--psm 6')
 
-        # Store license plate coordinates
-        plate_coordinates = [(x, y), (x + w, y), (x + w, y + h), (x, y + h)]
-        break  # Break the loop after the first valid plate is found
+     # Store license plate coordinates
+    plate_coordinates = [(x, y), (x + w, y), (x + w, y + h), (x, y + h)]
+    break  # Break the loop after the first valid plate is found
+
+# Remove all spaces from plate_text
+plate_text = plate_text.strip().replace(" ", "")
 
 # Check if a license plate was detected and extracted
 if is_valid_plate(plate_text):
-    # Remove all spaces from plate_text
-    plate_text = plate_text.strip().replace(" ", "")
-    print(f"License Plate: {plate_text}")
+    print(f"License Plate Number: {plate_text}")
     print("License Plate Coordinates:", plate_coordinates)
 else:
     print("No valid license plate detected.")
 
-
+# plate_text = 'DL4CAB5056'
+# Assigning a variable first 4 values of text, to compare with RTO data
 plate_code = plate_text[:4]
+
+# Assigning a variable 3rd alpha-numeric text, to get the type of vehicle
 type_detector = plate_text[3]
 
 
 # Look up the state and district information
-if (type_detector.isdigit()):
-    if plate_code in rto_data:
-        state = rto_data[plate_code]["state"]
-        district = rto_data[plate_code]["district"]
-        if state == " " or state == district:
-            print(f"The vehicle belongs to {district}")
-        else:
-            print(f"The vehicle belongs to {district}, {state}")
+# if (type_detector.isdigit()):
+if plate_code in rto_data:
+    state = rto_data[plate_code]["state"]
+    district = rto_data[plate_code]["district"]
+    if state == " " or state == district:
+        print(f"The vehicle belongs to {district}")
     else:
-        print("RTO code not found in the database.")
-elif (type_detector.isalpha()):
+        print(f"The vehicle belongs to {district}, {state}")
+else:
+    print("RTO code not found in the database.")
+
+# Look up the type of vehicle
+if (type_detector.isalpha()):
     if type_detector == "C":
         print("The number plate belongs to a Car")
     elif type_detector == "E":
