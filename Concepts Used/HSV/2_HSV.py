@@ -1,4 +1,4 @@
-# Example to illustrate how to access and visualize each components of HSV 
+# Example to illustrate how to access and visualize each components of HSV color space 
 import cv2
 import numpy as np
 
@@ -20,3 +20,7 @@ cv2.imshow('Value', value)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
+# This code loads an image, converts it to the HSV color space, and then displays the individual Hue, 
+# Saturation, and Value components.

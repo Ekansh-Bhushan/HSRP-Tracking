@@ -17,3 +17,8 @@ processing tasks. Here's how to access and understand each component:
     Value represents the brightness of the color.
     Value values range from 0 (completely dark, black) to 255 (fully bright, white).
     To access the Value channel: hsv_image[:, :, 2].
+
+
+THRESHOLDING BASED ON HSV:
+Thresholding based on HSV allows you to isolate specific color ranges or intensities in your image. 
+You can create masks to segment regions with desired hues, saturations, or values. 
