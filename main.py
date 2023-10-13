@@ -53,8 +53,8 @@ def is_valid_plate(candidate):
     candidate = candidate.strip().upper()
 
     # Check the length of the candidate
-    if len(candidate) != 10:
-        return False  # License plates in India typically have 10 characters
+    if len(candidate) != 10:  # License plates in India typically have 10 characters
+        return False 
 
     # Check if the first 2 characters are alphabets (state code)
     state_code = candidate[:2]
