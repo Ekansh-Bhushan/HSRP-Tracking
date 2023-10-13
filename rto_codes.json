@@ -1571,10 +1571,6 @@
         "state": "Tamil Nadu",
         "district": "Coimbatore(South)"
     },
-    "TN42Y": {
-        "state": "Tamil Nadu",
-        "district": "Sulur"
-    },
     "TN38": {
         "state": "Tamil Nadu",
         "district": "CoimbatoreNorth"
@@ -2246,10 +2242,6 @@
     "BR57": {
         "state": "Bihar",
         "district": "Rohtas"
-    },
-    "PB01": {
-        "state": "Punjab",
-        "district": "Taxis"
     },
     "PB02": {
         "state": "Punjab",
