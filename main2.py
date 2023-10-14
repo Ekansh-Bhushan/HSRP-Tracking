@@ -44,3 +44,30 @@ plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
 plt.show()
 
 
+# ============================== Extracting the number plate section =========================
+(x,y) = np.where(mask == 255) # locate specific regions in the image where pixel values are 25
+(x1, y1) = (np.min(x), np.min(y))
+(x2, y2) = (np.max(x), np.max(y))
+cropped_image = gray[x1:x2+1, y1:y2+1]
+# Here's an explanation of how this line of code works:
+# 1. gray is assumed to be a grayscale image. It's a two-dimensional NumPy array where each 
+#     pixel's intensity is represented by a single value (typically ranging from 0 to 255).
+# 2. (x1, y1) represents the top-left corner of the region of interest (ROI), and (x2, y2) 
+#     represents the bottom-right corner of the ROI. These values were obtained using the 
+#     numpy.where function and correspond to the coordinates of the bounding box around the 
+#     number plate in the image.
+# 3. The expression gray[x1:x2+1, y1:y2+1] is a NumPy array slicing operation that extracts the 
+#     subregion of the gray image defined by the coordinates (x1, y1) as the top-left corner and 
+#     (x2, y2) as the bottom-right corner.
+#     (A) x1:x2+1 defines the range of rows to be extracted, where x1 is the starting row and 
+#         x2+1 is the ending row. 
+#         This ensures that the slice includes the row with index x2.
+#     (B) y1:y2+1 defines the range of columns to be extracted, where y1 is the starting column 
+#         and y2+1 is the ending column. 
+#         This ensures that the slice includes the column with index y2.
+# The +1 is added to the ending row and column indices to ensure that the bottom-right corner 
+# pixel is included in the extracted region. 
+# NumPy's array slicing is exclusive of the ending index by default, so adding 1 includes the 
+# last element.
+plt.imshow(cv2.cvtColor(cropped_image, cv2.COLOR_BGR2RGB))
+# plt.show()
