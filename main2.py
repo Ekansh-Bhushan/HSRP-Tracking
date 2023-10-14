@@ -20,3 +20,17 @@ bfilter = cv2.bilateralFilter(gray, 17, 17, 17) # Noise Reduction
 edged = cv2.Canny(bfilter, 30, 200) # Edge Detection
 plt.imshow(cv2.cvtColor(edged, cv2.COLOR_BGR2RGB))
 plt.show()
+
+
+# ========================================== Find Contours ===================================
+# Detecing polygons (ideally we're looking for contour which has 4 points i.e. a rectangle)
+keypoints = cv2.findContours(edged.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+contours = imutils.grab_contours(keypoints)
+contours = sorted(contours, key=cv2.contourArea, reverse=True)[:10]
+location = None
+for contour in contours:
+    approx = cv2.approxPolyDP(contour, 10, True)
+    if (len(approx) == 4):
+        location = approx
+        break
+print(location)
