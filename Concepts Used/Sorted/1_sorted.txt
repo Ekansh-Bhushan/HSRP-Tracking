@@ -1,0 +1,20 @@
+The sorted function is a built-in Python function used to sort elements in an iterable. In 
+context of sorting contours, it can be used to sort list of contours based on specific criteria. 
+When working with contours in OpenCV, you often want to sort them, such as sorting them by area, 
+perimeter, or position, depending on your specific image processing task.
+
+Here's a breakdown of the function's parameters and how it works:
+sorted_contours = sorted(contours, key=key, reverse=reverse)
+
+1. contours: 
+    This is the list of contours you want to sort. 
+    It should be a list of lists, where each inner list represents a contour, and each contour 
+    contains points (x, y) that define the contour.
+2. key: 
+    The key parameter specifies a function to determine the sorting criteria. 
+    You provide a lambda function or a regular function that computes a value for each contour 
+    based on which the sorting is performed. 
+    This function is applied to each contour in the list.
+3. reverse (Optional): 
+    This is an optional parameter, and when set to True, it sorts the contours in reverse order, 
+    meaning in descending order.
