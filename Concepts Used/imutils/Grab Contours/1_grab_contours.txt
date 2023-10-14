@@ -1,0 +1,28 @@
+The grab_contours function in the "imutils" library is a utility function designed to simplify 
+the process of extracting contours from the output of the cv2.findContours function in OpenCV. 
+It's especially useful when you want to quickly access the list of detected contours without 
+needing to handle the hierarchy that cv2.findContours returns.
+
+
+Background:
+In OpenCV, when you use the cv2.findContours function to detect contours in an image, it returns 
+a tuple containing contours and a hierarchy. Contours are stored in a list, while the hierarchy 
+is a structure that provides information about the relationships between the contours. 
+For many basic tasks, you typically only need the list of contours and not the hierarchy.
+
+
+Purpose of grab_contours:
+imutils.grab_contours simplifies the process of extracting the contours by checking the input 
+structure and taking the following actions:
+1. If the input to grab_contours is a tuple, it assumes that it's the output of cv2.findContours 
+    and extracts the contours (the first element of the tuple). This is the most common usage.
+2. If the input is already a list of contours (i.e., it's not a tuple), grab_contours returns 
+    that list without any changes. This allows you to use the function on the result of 
+    cv2.findContours without needing to check the data type first.
+
+
+Benefits:
+The primary benefit of using grab_contours is code simplification and enhanced readability. 
+It's especially useful in scenarios where you don't want to deal with the hierarchy of contours 
+and only need the list of contours for further processing. 
+By using this utility function, you can write cleaner and more concise code.
