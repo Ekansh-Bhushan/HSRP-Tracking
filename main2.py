@@ -9,7 +9,7 @@ import easyocr
 
 # ================================= Read in image, Grayscale and Blur ========================
 # img = cv2.imread("image2.jpg") # giving issue for now
-img = cv2.imread("image4.jpg")
+img = cv2.imread("image3.jpg")
 plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 plt.show()
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -91,6 +91,8 @@ print(result)
 # ================================== Render Result over actual image =========================
 if result:
     text = result[0][-2]
+    text = text.strip().replace(".", "") # Removing unnecessary Dots
+    text = text.strip().replace(" ", "") # Removing unnecessary Spaces
     font = cv2.FONT_HERSHEY_SIMPLEX
     res = cv2.putText(img, text=text, org=(approx[0][0][0], approx[1][0][1]+60), fontFace=font, fontScale=1, color=(0,255,0), thickness=2, lineType=cv2.LINE_AA)
     res = cv2.rectangle(img, tuple(approx[0][0]), tuple(approx[2][0]), (0,255,0),3)
