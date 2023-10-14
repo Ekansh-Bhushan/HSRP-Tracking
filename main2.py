@@ -70,4 +70,4 @@ cropped_image = gray[x1:x2+1, y1:y2+1]
 # NumPy's array slicing is exclusive of the ending index by default, so adding 1 includes the 
 # last element.
 plt.imshow(cv2.cvtColor(cropped_image, cv2.COLOR_BGR2RGB))
-# plt.show()
+plt.show()
