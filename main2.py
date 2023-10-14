@@ -13,3 +13,10 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 # Whenever you're displaying image using matplotlib, it expects RGB (by default img is in BGR)
 plt.imshow(cv2.cvtColor(gray, cv2.COLOR_BGR2RGB))
 plt.show()
+
+
+# =================================== Apply filter and find edges ============================
+bfilter = cv2.bilateralFilter(gray, 17, 17, 17) # Noise Reduction
+edged = cv2.Canny(bfilter, 30, 200) # Edge Detection
+plt.imshow(cv2.cvtColor(edged, cv2.COLOR_BGR2RGB))
+plt.show()
