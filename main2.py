@@ -6,6 +6,7 @@ import imutils
 import easyocr
 
 
+
 # ================================= Read in image, Grayscale and Blur ========================
 # img = cv2.imread("image2.jpg") # giving issue for now
 img = cv2.imread("image3.jpg")
@@ -15,11 +16,13 @@ plt.imshow(cv2.cvtColor(gray, cv2.COLOR_BGR2RGB))
 plt.show()
 
 
+
 # =================================== Apply filter and find edges ============================
 bfilter = cv2.bilateralFilter(gray, 17, 17, 17) # Noise Reduction
 edged = cv2.Canny(bfilter, 30, 200) # Edge Detection
 plt.imshow(cv2.cvtColor(edged, cv2.COLOR_BGR2RGB))
 plt.show()
+
 
 
 # ========================================== Find Contours ===================================
@@ -36,12 +39,14 @@ for contour in contours:
 print(location)
 
 
+
 # ============================================= Masking ======================================
 mask = np.zeros(gray.shape, np.uint8)
 new_image = cv2.drawContours(mask, [location], 0, 255, -1)
 new_image = cv2.bitwise_and(img, img, mask=mask)
 plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
 plt.show()
+
 
 
 # ============================== Extracting the number plate section =========================
@@ -71,3 +76,10 @@ cropped_image = gray[x1:x2+1, y1:y2+1]
 # last element.
 plt.imshow(cv2.cvtColor(cropped_image, cv2.COLOR_BGR2RGB))
 plt.show()
+
+
+
+# ==================================== Use Easy OCR to read text =============================
+reader = easyocr.Reader(['en'])
+result = reader.readtext(cropped_image)
+print(result)
