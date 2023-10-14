@@ -42,3 +42,5 @@ new_image = cv2.drawContours(mask, [location], 0, 255, -1)
 new_image = cv2.bitwise_and(img, img, mask=mask)
 plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
 plt.show()
+
+
