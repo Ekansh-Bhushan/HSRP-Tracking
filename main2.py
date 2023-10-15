@@ -10,7 +10,7 @@ import re
 
 
 # ================================= Read in image, Grayscale and Blur ========================
-img = cv2.imread("image1.jpg")
+img = cv2.imread("v68.jpg")
 plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 # plt.show()
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -22,14 +22,15 @@ plt.imshow(cv2.cvtColor(gray, cv2.COLOR_BGR2RGB))
 
 # =================================== Apply filter and find edges ============================
 bfilter = cv2.bilateralFilter(gray, 17, 17, 17) # Noise Reduction
-edged = cv2.Canny(bfilter, 30, 200) # Edge Detection
+edged = cv2.Canny(bfilter, 30, 100) # Edge Detection
 plt.imshow(cv2.cvtColor(edged, cv2.COLOR_BGR2RGB))
-# plt.show()
+plt.show()
 
 
 
 # ========================================== Find Contours ===================================
 # Detecing polygons (ideally we're looking for contour which has 4 points i.e. a rectangle)
+# _, thresh = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 keypoints = cv2.findContours(edged.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 contours = imutils.grab_contours(keypoints)
 contours = sorted(contours, key=cv2.contourArea, reverse=True)[:10]
@@ -39,7 +40,7 @@ for contour in contours:
     if (len(approx) == 4):
         location = approx
         break
-# print(location)
+print(location)
 
 
 
@@ -48,7 +49,7 @@ mask = np.zeros(gray.shape, np.uint8)
 new_image = cv2.drawContours(mask, [location], 0, 255, -1)
 new_image = cv2.bitwise_and(img, img, mask=mask)
 plt.imshow(cv2.cvtColor(new_image, cv2.COLOR_BGR2RGB))
-# plt.show()
+plt.show()
 
 
 
@@ -78,27 +79,49 @@ cropped_image = gray[x1:x2+1, y1:y2+1]
 # NumPy's array slicing is exclusive of the ending index by default, so adding 1 includes the 
 # last element.
 plt.imshow(cv2.cvtColor(cropped_image, cv2.COLOR_BGR2RGB))
-# plt.show()
+plt.show()
 
 
 
 # ==================================== Use Easy OCR to read text =============================
 reader = easyocr.Reader(['en'])
 result = reader.readtext(cropped_image)
-# print(result)
+print(result)
 
 
 
-# ================================== Render Result over actual image =========================
+# # ================================== Render Result over actual image =========================
 if result:
     plate_text = result[0][-2]
     plate_text = plate_text.strip().replace(".", "") # Removing unnecessary Dots
     plate_text = plate_text.strip().replace(" ", "") # Removing unnecessary Spaces
+    plate_text = plate_text.strip().replace("_", "") # Removing unnecessary Underscores
+    plate_text = plate_text.strip().replace(",", "") # Removing unnecessary Commas
+    plate_text = plate_text.upper() # Converting all letters to upper case
     font = cv2.FONT_HERSHEY_SIMPLEX
     res = cv2.putText(img, text=plate_text, org=(approx[0][0][0], approx[1][0][1]+60), fontFace=font, fontScale=1, color=(0,255,0), thickness=2, lineType=cv2.LINE_AA)
     res = cv2.rectangle(img, tuple(approx[0][0]), tuple(approx[2][0]), (0,255,0),3)
     plt.imshow(cv2.cvtColor(res, cv2.COLOR_BGR2RGB))
     plt.show()
-    print(plate_text)
+    print("EasyOCR: ",plate_text)
 else:
     print("No text found in the result.")
+plate_text2 = pytesseract.image_to_string(cropped_image, config='--psm 7')  # Adjust the configuration as needed
+plate_text2 = plate_text2.strip().replace(".", "") # Removing unnecessary Dots
+plate_text2 = plate_text2.strip().replace(" ", "") # Removing unnecessary Spaces
+plate_text2 = plate_text2.strip().replace("_", "") # Removing unnecessary Underscores
+plate_text2 = plate_text2.strip().replace(",", "") # Removing unnecessary Commas
+plate_text2 = plate_text2.strip().replace('“', '') # Removing unnecessary Colons
+plate_text2 = plate_text2.strip().replace('=', '') # Removing unnecessary Equal
+plate_text2 = plate_text2.upper() # Converting all letters to upper case
+print("Tesseract: ",plate_text2)
+
+
+print("Confirmed Output: ", end="")
+for i in range(len(plate_text)):
+    if(plate_text[i] == plate_text2[i]):
+        print(plate_text[i], end = "")
+    else:
+        print(" ",end = "")
+    i+=1
+print("\n")

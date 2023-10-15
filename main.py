@@ -21,7 +21,7 @@ with open("rto_codes.json", "r") as json_file:
     rto_data = json.load(json_file)
 
 
-image_path = "vehicle_image3.jpg"
+image_path = "test.jpg"
 original = cv2.imread(image_path)
 preprocessed = preprocess_image1(image_path)
 cv2.imshow("Preprocessed Image", preprocessed)
@@ -73,54 +73,8 @@ for contour in contours:
 
 
 
-# Function for detecting color scheme of number plate
-def get_color_scheme(plate_roi2):
-    # Check if the plate_roi is None or empty
-    if plate_roi2 is None or plate_roi2.size == 0:
-        return "Unknown color scheme"
-
-    # Calculate the average intensity of the plate region
-    average_intensity = np.mean(plate_roi2)
-
-    # Define intensity thresholds for white and yellow
-    white_intensity_threshold = 200  # Adjust this threshold as needed
-    yellow_intensity_threshold = 100  # Adjust this threshold as needed
-    black_intensity_threshold = 50  # Adjust this threshold as needed
-    green_intensity_threshold = 150  # Adjust this threshold as needed
-    red_intensity_threshold = 150  # Adjust this threshold as needed
-
-    # Check for a white background with black text
-    if average_intensity > white_intensity_threshold:
-        return "White background with black text"
-
-    # Check for a yellow background with black text
-    if average_intensity > yellow_intensity_threshold:
-        return "Yellow background with black text"
-
-    # Check for a black background with yellow text
-    if average_intensity > black_intensity_threshold:
-        return "Black background with yellow text"
-
-    # Check for a green background with white text
-    if average_intensity > green_intensity_threshold:
-        return "Green background with white text"
-
-    # Check for a red background with white text
-    if average_intensity > red_intensity_threshold:
-        return "Red background with white text"
-
-    # Check for a yellow background with red text
-    # You can set your own intensity threshold for this case
-    # Let's assume a threshold of 120
-    yellow_red_text_threshold = 120
-    if average_intensity > yellow_red_text_threshold:
-        return "Yellow background with red text"
-
-    return "Unknown color scheme"
 
 
-
-plate_text = 'DL3CBQ2710'
 
 # =========== Check if a license plate was detected and extracted =============
 # Remove all spaces from plate_text
@@ -171,5 +125,3 @@ if (type_detector.isalpha()):
     elif type_detector == "V":
         print("The number plate belongs to Vehicle used in Transportation")
 
-
-# print(get_color_scheme(plate_roi2))
