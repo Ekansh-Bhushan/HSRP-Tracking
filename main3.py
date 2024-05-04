@@ -10,7 +10,7 @@ import re
 
 
 # ================================= Read in image, Grayscale and Blur ========================
-img = cv2.imread("/Users/kartik/HSRP-Tracking/Issues/OCR Issue/v23.jpg")
+img = cv2.imread("vehicle_image2.jpg")
 plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
 # plt.show()
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
